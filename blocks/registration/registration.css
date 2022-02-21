@@ -1,7 +1,12 @@
 .registration {
-  max-width: 100%;
+  max-width: 936px;
   margin: 0 auto;
-  padding: 100px 132px 0 132px;
+}
+
+@media screen and (max-width: 998px) {
+  .egistration {
+    max-width: 616px;
+  }
 }
 
 .registration__description {

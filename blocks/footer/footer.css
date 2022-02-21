@@ -1,3 +1,13 @@
 .footer {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 70px 0 75px;
+}
+
+@media screen and (max-width: 591.98px) {
+  .footer {
+    padding: 0;
+  }
 }
