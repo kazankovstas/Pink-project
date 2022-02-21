@@ -1,0 +1,25 @@
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #eee;
+  border-radius: 50%;
+  margin-right: 11px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
+}
+
+.footer__social-item:hover {
+  border: 3px solid var(--accent-black);
+}
+
+.footer__social-item:active {
+  border: 3px solid var(--accent-black);
+  opacity: 0.3;
+}

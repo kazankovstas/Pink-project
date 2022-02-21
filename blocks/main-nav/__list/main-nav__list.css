@@ -1,0 +1,12 @@
+.main-nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1198px) {
+  .main-nav__list {
+    justify-content: flex-end;
+  }
+}

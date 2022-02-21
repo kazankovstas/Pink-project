@@ -1,0 +1,14 @@
+.footer__create {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer__create:hover .footer__icon {
+  fill: var(--accent-black);
+}
+
+.footer__create:active .footer__icon {
+  fill: var(--accent-black);
+  opacity: 0.3;
+}

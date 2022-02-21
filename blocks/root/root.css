@@ -1,0 +1,68 @@
+:root {
+  /* basic */
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  /* accent */
+  --accent-black: #283645;
+  --accent-pink: #d22856;
+  /* button */
+  --button-rest: #2aab6d;
+  --button-hover: #1c9b5e;
+  --button-disabled: #e5e5e5;
+  /* filter */
+  --filter-no: #f25b26;
+  --filter-yes: #3dc644;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page {
+  height: 100%;
+  background-color: #eee;
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  align-content: start;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Opensans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.666;
+  color: var(--accent-black);
+}
+
+.button {
+  font-family: "Opensans", "Arial", sans-serif;
+  font-weight: 700;
+  border-radius: 29px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+}

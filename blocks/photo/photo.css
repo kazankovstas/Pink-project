@@ -1,0 +1,132 @@
+/* photo__list */
+.photo__list {
+  list-style: none;
+  width: 100%;
+  display: grid;
+  max-width: min-content;
+  margin: 0 auto 67px;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 20px;
+  row-gap: 54px;
+}
+
+@media screen and (max-width: 998px) {
+  .photo__list {
+    grid-template-columns: repeat(2, 300px);
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .photo__list {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .photo__list {
+    grid-template-columns: repeat(1, 280px);
+  }
+}
+
+/* photo__item */
+.photo__item {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* photo__main-card */
+.photo__main-card {
+  font-size: 0;
+  position: relative;
+}
+
+/* photo__title */
+.photo__title {
+  margin: 100px auto 97px;
+  max-width: 47.66%;
+  text-align: center;
+}
+
+@media screen and (max-width: 777.98px) {
+  .photo__title {
+    max-width: 88%;
+  }
+}
+
+@media screen and (max-width: 591.98px) {
+  .photo__title {
+    margin: 54px auto 60px;
+    width: 280px;
+    font-size: 14px;
+    line-height: 2.142;
+  }
+}
+
+/* photo-card__info_main */
+.photo-card__info_main {
+  min-height: 96px;
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+  margin-bottom: 50px;
+  padding: 30px 30px 0 30px;
+}
+
+@media screen and (max-width: 998px) {
+  .photo-card__info_main {
+    max-width: 620px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .photo-card__info_main {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 25px 10px 0 17px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .photo-card__info_main {
+    max-width: 280px;
+  }
+}
+
+/* photo__main-label */
+.photo__main-label {
+  position: absolute;
+  top: 54px;
+  right: 130px;
+  color: var(--basic-white);
+  background-color: var(--accent-pink);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  display: inline-block;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.photo__main-label:hover {
+  opacity: 0.9;
+  border: 1px solid rgba(255 255 0);
+}
+
+@media screen and (max-width: 998px) {
+  .photo__main-label {
+    right: 20px;
+    top: 57px;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .photo__main-label {
+    top: 0;
+  }
+}

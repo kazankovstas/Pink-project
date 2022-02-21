@@ -1,0 +1,233 @@
+.form {
+  display: grid;
+  grid-template-columns: 433px 431px;
+  column-gap: 74px;
+  grid-template-rows: repeat(5, max-content);
+  row-gap: 69px;
+  margin-bottom: 69px;
+}
+
+/* FORM_ITEM */
+.form__item {
+  grid-column: 1/-1;
+  max-width: 100%;
+  margin: -15px 0 0 0;
+}
+
+.form__item_name {
+  grid-row: 1/2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__item_contacts {
+  grid-row: 2/3;
+}
+
+.form__item_achievements {
+  grid-row: 3/4;
+}
+
+.form__item_feedback {
+  grid-row: 4/5;
+}
+
+.form__item_type_contacts {
+  display: grid;
+  gap: 12px;
+}
+
+/* form-LEGEND */
+
+.form__legend {
+  font-size: 14px;
+  line-height: 2.142;
+  color: var(--accent-pink);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 25px;
+}
+
+/* form-FIELDSET */
+.form__fieldset {
+  max-width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.form__fieldset_type_name {
+  max-width: 433px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 55px;
+  border: none;
+}
+
+.form__fieldes_type_app {
+  margin: -15px 0 0 0;
+}
+
+.form__fieldset_type_feedback {
+  padding: 39px 60px 45px;
+}
+/* form-LABEL */
+
+.form__label_type_name {
+  font-size: 14px;
+  line-height: 2.142;
+  color: var(--accent-pink);
+  text-transform: uppercase;
+  margin: 0 20px 0 0;
+}
+
+.form__label_type_app {
+  position: relative;
+  margin: 0 0 0 133px;
+  cursor: pointer;
+}
+
+.form__label_type_app::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -59px;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid #d7d7d7;
+  transition: 0.4s;
+}
+
+.form__label_type_contacts {
+  font-size: 14px;
+  line-height: 2.142;
+  color: var(--accent-pink);
+  text-transform: uppercase;
+  margin: 0 0 0 20px;
+}
+
+.form__label_type_achievements {
+  margin: 0 0 0 22px;
+}
+/* form-INPUT */
+
+.form__input_container {
+  width: 433px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.form__input {
+  padding: 23px 0 23px 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: 59px;
+  outline: none;
+}
+
+.form__input:hover {
+  border: 2px solid var(--accent-black);
+}
+
+.form__input:active {
+  border: 2px solid var(--accent-pink);
+}
+
+.form__input:focus {
+  outline: 2px solid var(--accent-pink);
+  border-radius: 5px;
+}
+
+.form__input_type_app:hover + .form__label_type_app::before {
+  border: 3px solid var(--accent-black);
+}
+
+.form__input_type_app:active + .form__label_type_app::before {
+  border: 3px solid var(--accent-pink);
+}
+
+.form__input_type_app:checked + .form__label_type_app::after {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--accent-pink);
+  border-radius: 50%;
+}
+
+.form__input_type_contacts {
+  position: relative;
+  width: 371px;
+}
+
+.form__input_type_contacts::after {
+  content: url(../../img/phone-icon.svg);
+}
+
+.form__input_type_achievements {
+  position: relative;
+}
+
+.form__input_type_achievements::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -35px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+}
+
+/* CONTAINERS */
+
+.form__label_type_app-container {
+  padding: 49px 0 0 0;
+  width: 431px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 39px;
+  list-style: none;
+}
+
+.form__input_type_contacts-container {
+  padding: 28px 60px 12px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 74px;
+  list-style: none;
+}
+
+form__item_type_contacts-item {
+  display: flex;
+}
+
+.form__input_type_achievements-container {
+  padding: 49px 60px 57px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 57px;
+  row-gap: 47px;
+  list-style: none;
+}
+
+/* FORM-TEXTAREA */
+.form__textarea {
+  width: 816px;
+  min-height: 124px;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  overflow: auto;
+}

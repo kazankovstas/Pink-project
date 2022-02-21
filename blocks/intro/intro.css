@@ -1,0 +1,107 @@
+.intro__wrapper {
+  position: relative;
+  margin-left: auto;
+  background-image: url(../../img/phone.png);
+  box-sizing: border-box;
+}
+
+.intro {
+  background-image: url(../../img/back-desktop.png);
+  padding: 98px 0 130px 148px;
+}
+
+.intro__catalog {
+  padding: 74px 0 104px;
+}
+
+@media screen and (max-width: 777.98px) {
+  .intro__catalog {
+    padding: 81px 0 143px;
+  }
+}
+
+@media screen and (max-width: 591.98px) {
+  .intro__catalog {
+    padding: 36px 0 84px;
+  }
+}
+
+.intro__info {
+  max-width: 310px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.background {
+  position: absolute;
+  top: 64px;
+  right: 250px;
+}
+
+.intro__button {
+  margin: 0 0 67px 0;
+  padding: 17px 30px;
+  width: 300px;
+  font-family: "Opensans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 0.857;
+  color: var(--basic-white);
+  border: 3px solid var(--basic-white);
+  border-radius: 29px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.intro__button:hover {
+  color: var(--accent-pink);
+  background-color: var(--basic-white);
+}
+
+.intro__button:active {
+  color: rgba(210, 40, 86, 0.3);
+  background-color: var(--basic-white);
+}
+
+.intro__title {
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 1.36;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+@media screen and (max-width: 591.98px) {
+  .intro__title {
+    font-size: 24px;
+  }
+}
+
+.intro__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.333;
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.social__list {
+  margin: 0 0 58px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.social__link {
+  transition: 0.4s;
+}
+
+.social__link:hover {
+  transform: scale(1.2);
+}

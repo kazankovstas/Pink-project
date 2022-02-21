@@ -1,0 +1,44 @@
+.header__logo {
+  height: min-content;
+  cursor: pointer;
+}
+
+.header__logo:hover path {
+  fill: var(--accent-pink);
+}
+
+.header__logo:active path {
+  fill: rgba(255 255 255 / 0.3);
+}
+
+@media screen and (max-width: 991.98px) {
+  .header__logo_desktop {
+    display: none;
+  }
+}
+
+.header__logo_tablet {
+  display: none;
+}
+
+@media screen and (max-width: 991.98px) {
+  .header__logo_tablet {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header__logo_tablet {
+    display: none;
+  }
+}
+
+.header__logo_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  .header__logo_mobile {
+    display: inline-block;
+  }
+}

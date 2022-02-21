@@ -1,0 +1,31 @@
+/* HEADER */
+
+.header {
+  width: 100%;
+  background-color: rgb(15, 26, 27);
+}
+
+/* HEADER__WRAPPER */
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 14.416%;
+  max-width: 1200px;
+  background-color: rgb(15, 26, 27);
+  padding: 27px 10.84% 38.5px;
+  color: white;
+  align-items: center;
+}
+
+@media screen and (max-width: 991.98px) {
+  .header__wrapper {
+    padding: 27px 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header__wrapper {
+    padding: 22px 20px;
+  }
+}

@@ -1,0 +1,57 @@
+.registration {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 132px 0 132px;
+}
+
+.registration__description {
+  max-width: 81%;
+  text-align: center;
+  margin: 0 auto 84px;
+}
+
+.registration__button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  align-items: center;
+}
+
+.registration__button {
+  font-weight: 700;
+  color: var(--basic-white);
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--button-rest);
+  padding: 16px 55px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 59px;
+  transition: 0.3s;
+}
+
+.registration__button:hover {
+  background-color: var(--button-hover);
+}
+
+.registration__button:active {
+  background-color: var(--button-hover);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.registration__button:disabled {
+  background-color: #e5e5e5;
+}
+
+.registration__input-description {
+  font-size: 14px;
+  line-height: 2.142;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.registration__input-description_accent {
+  color: var(--accent-pink);
+}

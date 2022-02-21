@@ -1,0 +1,8 @@
+.footer__logo:hover .footer__logo_color {
+  fill: var(--accent-pink);
+}
+
+.footer__logo:active .footer__logo_color {
+  fill: var(--accent-black);
+  opacity: 0.3;
+}

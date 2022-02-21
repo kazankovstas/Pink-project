@@ -1,0 +1,17 @@
+.main-nav__item {
+  margin-right: 79px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__item:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1198px) {
+  .main-nav__item {
+    margin-right: 32px;
+  }
+}
