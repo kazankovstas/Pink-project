@@ -24,8 +24,120 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 778px) {
   .header__wrapper {
-    padding: 22px 20px;
+    padding: 0;
   }
+}
+
+@media screen and (max-width: 420px) {
+  .header__wrapper {
+    padding: 0;
+  }
+}
+
+/* BURGER */
+.header__wrapper-burger {
+  max-width: 100%;
+  grid-template-rows: 109px 252px;
+  align-items: inherit;
+  padding: 0;
+}
+
+@media screen and (max-width: 778px) {
+  .main-nav__list {
+    display: grid;
+    grid-template-rows: 109px repeat(4, 63px);
+  }
+}
+
+/* TABLET MENU */
+.tablet__menu {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: 27px 20px 43px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 778.2px) {
+  .tablet__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .tablet__menu {
+    padding: 23px 20px;
+  }
+}
+
+/* КНОПКА ОТКРЫТИЯ */
+.menu-burger__open-btn {
+  display: none;
+}
+
+@media screen and (max-width: 778px) {
+  .menu-burger__open-btn {
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 420px) {
+    .menu-burger__open-btn {
+      top: 21px;
+    }
+  }
+
+  /* SVG */
+  .menu-burger__open-btn:hover .menu-burger__open-icon {
+    fill: var(--accent-pink);
+  }
+
+  .menu-burger__open-btn:active .menu-burger__open-icon {
+    fill: rgba(210 40 86 / 0.3);
+  }
+}
+
+.menu-burger__open-icon {
+  transition: 0.3s;
+}
+/* SVG */
+
+/* КНОПКА ЗАКРЫТИЯ */
+.menu-burger__close-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 23px;
+  height: 23px;
+}
+
+.close-button {
+  transition: 0.3s;
+}
+
+.menu-burger__close-btn:hover .close-button {
+  fill: var(--accent-pink);
+}
+
+.menu-burger__close-btn:active .close-button {
+  fill: rgba(210 40 86 / 0.3);
+}
+
+/* Скрываем кнопки */
+.menu-burger__close-btn_hide {
+  display: none;
+}
+
+.menu-burger__open-btn_hide {
+  display: none;
+}
+
+.tablet__background {
+  background-color: #283645;
 }

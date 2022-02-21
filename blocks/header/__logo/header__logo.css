@@ -21,24 +21,26 @@
   display: none;
 }
 
-@media screen and (max-width: 991.98px) {
-  .header__logo_tablet {
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .header__logo_tablet {
+@media screen and (max-width: 778px) {
+  .header__logo {
     display: none;
   }
 }
 
-.header__logo_mobile {
-  display: none;
+@media screen and (max-width: 991.98px) {
+  .header__logo_tablet {
+    display: inline-block;
+    background-image: url(../../../img/logo-PINK/logo-tablet.svg);
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 40px;
+  }
 }
 
-@media screen and (max-width: 360px) {
-  .header__logo_mobile {
-    display: inline-block;
+@media screen and (max-width: 420px) {
+  .header__logo_tablet {
+    background-image: url(../../../img/logo-PINK/logo-mobile.svg);
+    width: 74px;
+    height: 23px;
   }
 }

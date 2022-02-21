@@ -10,3 +10,21 @@
     justify-content: flex-end;
   }
 }
+
+@media screen and (max-width: 778px) {
+  .main-nav {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+    background-color: #283645;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .main-nav__list {
+    display: grid;
+    grid-template-rows: repeat(4, 63px);
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
