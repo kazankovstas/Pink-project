@@ -37,7 +37,6 @@
 
 @media screen and (max-width: 659.88px) {
   .modal-error {
-    display: grid;
     grid-template-rows: 163px 96px;
   }
 }
