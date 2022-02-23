@@ -16,6 +16,17 @@
   }
 }
 
+@media screen and (max-width: 659.88px) {
+  .form {
+    max-width: 320px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 342px 604px 287px 340px 279px;
+    margin: 0 auto;
+    row-gap: 0;
+    justify-content: center;
+  }
+}
+
 /* FORM_ITEM */
 .form__item {
   grid-column: 1/-1;
@@ -55,6 +66,22 @@
   }
 }
 
+@media screen and (max-width: 659.88px) {
+  .form__item_contacts {
+    max-width: 276px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form__item_type_contacts-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 59px;
+    gap: 8px;
+  }
+}
+
 .form__item_achievements {
   grid-row: 3/4;
 }
@@ -63,6 +90,14 @@
   .form__item_achievements {
     grid-row: 4/5;
     width: 616px;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__item_achievements {
+    grid-row: 2/3;
+    max-width: 320px;
+    background-color: #f2f2f2;
   }
 }
 
@@ -92,6 +127,22 @@
   padding: 0 25px;
 }
 
+@media screen and (max-width: 659.88px) {
+  .form__legend_hide {
+    display: none;
+  }
+
+  .form__legend_achievements {
+    padding-top: 42px;
+  }
+
+  .form__legend {
+    padding: 36px 50px 36px;
+    margin: 0;
+    line-height: 1.285;
+  }
+}
+
 /* form-FIELDSET */
 .form__fieldset {
   max-width: 100%;
@@ -107,9 +158,14 @@
   }
 }
 
+@media screen and (max-width: 659.88px) {
+  .form__fieldset {
+    border: none;
+  }
+}
+
 .form__fieldset_type_name {
   max-width: 616px;
-
   display: flex;
   flex-flow: column wrap;
   gap: 55px;
@@ -125,7 +181,14 @@
   }
 }
 
-.form__fieldes_type_app {
+@media screen and (max-width: 659.88px) {
+  .form__fieldset_type_name {
+    max-width: 276px;
+    gap: 20px;
+  }
+}
+
+.form__fieldset_type_app {
   margin: -15px 0 0 0;
 }
 
@@ -134,27 +197,52 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     margin: 0 auto;
-    border: 1px solid tomato;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__fieldset_type_app {
+    max-width: 276px;
+    grid-row: 4/5;
+    background-color: #f2f2f2;
   }
 }
 
 .form__fieldset_type_feedback {
   padding: 39px 60px 45px;
 }
+
+@media screen and (max-width: 659.88px) {
+  .form__fieldset_type_feedback {
+    padding: 0;
+  }
+}
 /* form-LABEL */
 
 .form__label_type_name {
   font-size: 14px;
-  line-height: 2.142;
+  line-height: 1.643;
   color: var(--accent-pink);
   text-transform: uppercase;
   margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__label_type_name {
+    margin: 0 0 0 23px;
+  }
 }
 
 .form__label_type_app {
   position: relative;
   margin: 0 0 0 133px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__label_type_app {
+    margin: 0 0 0 90px;
+  }
 }
 
 .form__label_type_app::before {
@@ -168,6 +256,7 @@
   border-radius: 50%;
   border: 3px solid #d7d7d7;
   transition: 0.4s;
+  background-color: var(--basic-white);
 }
 
 .form__label_type_contacts {
@@ -196,11 +285,14 @@
   }
 }
 
-/* @media screen and (max-width: 659.88px) {
+@media screen and (max-width: 659.88px) {
   .form__input_container {
     width: 276px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4px;
   }
-} */
+}
 
 .form__input {
   padding: 23px 0 23px 20px;
@@ -255,30 +347,60 @@
   }
 }
 
+@media screen and (max-width: 659.88px) {
+  .form__input_type_contacts {
+    width: 276px;
+    margin-bottom: 0;
+    grid-row: 2/2;
+  }
+}
+
 .form__input_type_contacts::after {
   content: url(../../img/phone-icon.svg);
 }
 
-.form__input_type_achievements {
+/* FILTER */
+.form__label_type_achievements {
+  display: block;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 
-.form__input_type_achievements::before {
-  position: absolute;
+.form__input_type_achievements + .form__label_type_achievements::before {
   content: "";
-  top: 0;
-  left: -35px;
+  position: absolute;
+  top: -2px;
+  left: -57px;
   width: 35px;
   height: 35px;
-  background-color: transparent;
   border: 2px solid #e5e5e5;
-  border-radius: 5px;
+  transition: 0.3s;
+  background-color: var(--basic-white);
+}
+
+.form__input_type_achievements:checked + .form__label_type_achievements::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -50px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../../img/checked.svg);
+}
+
+.form__input_type_achievements:hover + .form__label_type_achievements::before {
+  border: 2px solid var(--accent-black);
+}
+
+.form__input_type_achievements:active + .form__label_type_achievements::before {
+  border: 2px solid var(--accent-pink);
 }
 
 /* CONTAINERS */
 
 .form__label_type_app-container {
-  padding: 49px 0 0 0;
+  padding: 49px 0 54px 0;
   width: 431px;
   display: flex;
   flex-flow: column wrap;
@@ -288,12 +410,18 @@
 
 @media screen and (max-width: 998px) {
   .form__label_type_app-container {
-    padding: 49px 0 0 0;
     width: 616px;
     display: flex;
     flex-flow: column wrap;
     gap: 39px;
     list-style: none;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__label_type_app-container {
+    padding: 0;
+    width: 320px;
   }
 }
 
@@ -313,6 +441,13 @@
   }
 }
 
+@media screen and (max-width: 659.88px) {
+  .form__input_type_contacts-container {
+    gap: 20px;
+    padding: 0;
+  }
+}
+
 form__item_type_contacts-item {
   display: flex;
 }
@@ -329,13 +464,13 @@ form__item_type_contacts-item {
 
 @media screen and (max-width: 998px) {
   .form__input_type_achievements-container {
-    padding: 49px 60px 57px;
-    max-width: 100%;
-    display: grid;
     grid-template-columns: 1fr;
-    column-gap: 57px;
-    row-gap: 47px;
-    list-style: none;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__input_type_achievements-container {
+    padding: 0 0 0 57px;
   }
 }
 
@@ -348,6 +483,7 @@ form__item_type_contacts-item {
   outline: none;
   resize: none;
   overflow: auto;
+  padding: 22px 0 0 20px;
 }
 
 @media screen and (max-width: 998px) {
@@ -359,5 +495,29 @@ form__item_type_contacts-item {
     outline: none;
     resize: none;
     overflow: auto;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__textarea {
+    max-width: 276px;
+    min-height: 197px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .form__item_app {
+    background-color: #f2f2f2;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .legend-feedback {
+    padding: 42px 0 22px;
   }
 }

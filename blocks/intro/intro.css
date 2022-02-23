@@ -10,6 +10,12 @@
   padding: 98px 0 130px 148px;
 }
 
+@media screen and (max-width: 998px) {
+  .intro {
+    padding: 0;
+  }
+}
+
 .intro__catalog {
   padding: 74px 0 104px;
 }
@@ -73,8 +79,18 @@
   text-align: center;
 }
 
-@media screen and (max-width: 591.98px) {
+@media screen and (max-width: 998px) {
   .intro__title {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 81px;
+    padding-bottom: 74px;
+  }
+}
+
+@media screen and (max-width: 659.88px) {
+  .intro__title {
+    max-width: 276px;
     font-size: 24px;
   }
 }
