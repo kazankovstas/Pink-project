@@ -1,0 +1,19 @@
+.price {
+  background-color: #f2f2f2;
+}
+
+.price__container {
+  max-width: 100%;
+  height: 434px;
+}
+
+.price__container::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  transform: translateY(-100px) skewY(-4deg);
+  transform-origin: right;
+  background-color: white;
+  z-index: -1;
+}

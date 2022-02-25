@@ -1,0 +1,34 @@
+/* list */
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1;
+}
+
+@media screen and (max-width: 1198px) {
+  .nav__list {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .nav {
+    display: none;
+  }
+}
+
+/* item */
+.nav__item {
+  margin-right: 79px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1198px) {
+  .nav__item {
+    margin-right: 32px;
+  }
+}
