@@ -1,0 +1,134 @@
+.contacts {
+  padding: 50px 0 0 0;
+}
+
+.contacts__item:last-child {
+  margin: 0;
+}
+
+.contacts__heading {
+  max-width: 280px;
+  margin: 0 auto 45px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.361;
+  color: var(--accent-black);
+  text-align: center;
+}
+
+.contacts__list {
+  display: grid;
+  row-gap: 31px;
+  max-width: 320px;
+  margin: 0 auto -75px;
+  padding-bottom: 110px;
+  text-align: center;
+  z-index: 2;
+  clip-path: polygon(100% 0%, 100% 80%, 50% 88%, 50% 88%, 0 80%, 0 0);
+  background-color: var(--basic-white);
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.361;
+  color: var(--accent-black);
+}
+
+.contacts__link {
+  max-width: 280px;
+  margin: 0 auto 31px;
+}
+
+.contacts__link:last-child {
+  margin: 0 auto 0;
+}
+
+.contacats-link {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.361;
+  color: var(--accent-pink);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contacats-link:hover {
+  color: var(--accent-black);
+  text-decoration: underline;
+}
+
+.contacats-link:active {
+  color: var(--accent-black);
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 680px) {
+  .contacts__heading {
+    max-width: 65%;
+    font-size: 40px;
+  }
+
+  .contacts__list {
+    max-width: 85%;
+    margin: 0 auto -75px;
+    padding-bottom: 110px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 40px;
+  }
+
+  .contacts__item {
+    margin: 0;
+  }
+
+  .contacts__item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .contacts__item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .contacts__item:nth-child(3) {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .contacts__heading {
+    font-size: 50px;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 85%;
+    margin: 0 auto -75px;
+    padding-bottom: 110px;
+  }
+
+  .contacts__title {
+    margin-bottom: 24px;
+  }
+
+  .contacts__item:nth-child(2) {
+    order: 2;
+  }
+
+  .contacts__item:nth-child(3) {
+    order: 1;
+  }
+}

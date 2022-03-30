@@ -36,6 +36,8 @@
 
 .intro {
   background-image: url(../../img/back-desktop.png);
+  background-position: center top;
+  background-size: cover;
   /* padding: 98px 0 130px 148px; */
 }
 

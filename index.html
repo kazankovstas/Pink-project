@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pages/index.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <script src="scripts/menu-burger.js" defer></script>
     <script src="scripts/slider.js" defer></script>
     <title>PINK</title>
@@ -300,12 +304,42 @@
           </div>
         </section>
         <section class="price">
+          <h2 class="visually-hidden">Цена</h2>
           <div class="price__container">
             <h1>PRICE</h1>
           </div>
         </section>
         <section class="contacts">
-          <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__heading">
+            Остались вопросы? <br />
+            Свяжитесь с нами!
+          </p>
+          <dl class="contacts__list">
+            <div class="contacts__item">
+              <dt class="contacts__title">Звоните:</dt>
+              <dd class="contacts__link">
+                <a class="contacats-link" href="tel:+78125556666" title=""
+                  >+7 (812) 555-66-66</a
+                >
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__title">Пишите:</dt>
+              <dd class="contacts__link">
+                <a class="contacats-link" href="mailto:mail@htmlacademy.ru"
+                  >mail@htmlacademy.ru</a
+                >
+              </dd>
+            </div>
+            <div class="contacts__item">
+              <dt class="contacts__title">Приезжайте в гости:</dt>
+              <dd class="contacts__link contacats-link">
+                ул. Большая Конюшенная, 19/8
+              </dd>
+            </div>
+          </dl>
+          <img class="contacts__map" src="img/map/map_mobile.png" alt="Карта" />
         </section>
       </div>
     </main>
@@ -362,8 +396,9 @@
             <path
               d="M10.785 33.6406C10.056 33.6354 9.35856 33.347 8.84491 32.8384C8.33126 32.3297 8.04302 31.642 8.04303 30.9253C8.04304 31.6437 7.75342 32.3329 7.2376 32.8419C6.72178 33.3508 6.02182 33.638 5.29102 33.6406C6.02182 33.6433 6.72178 33.9305 7.2376 34.4394C7.75342 34.9484 8.04304 35.6375 8.04303 36.356C8.04302 35.6392 8.33126 34.9516 8.84491 34.4429C9.35856 33.9342 10.056 33.6459 10.785 33.6406Z"
               fill="#283645"
-            /></svg
-        ></a>
+            />
+          </svg>
+        </a>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a

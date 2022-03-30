@@ -1,5 +1,6 @@
 .reviews {
   width: 100%;
+  min-height: 360px;
   z-index: 2;
   position: relative;
 }

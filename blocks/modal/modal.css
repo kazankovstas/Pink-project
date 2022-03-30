@@ -1,8 +1,8 @@
 .modal {
   position: fixed;
-  top: 360px;
   left: 0;
   right: 0;
+  bottom: 170px;
   width: 780px;
   height: 377px;
   border-radius: 5px;
@@ -29,10 +29,6 @@
     width: 320px;
     height: 289px;
   }
-}
-
-.modal-succes {
-  top: 817px;
 }
 
 @media screen and (max-width: 659.88px) {
