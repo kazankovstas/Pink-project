@@ -1,8 +1,6 @@
-<p align="center">
   <a href="https://kazankovstas.github.io/project-Pink/">
     <img src="img/readme/pink-readme.png" alt="Logo" width="220" height="">
   </a>
-</p>
 
 ## О проекте
 
