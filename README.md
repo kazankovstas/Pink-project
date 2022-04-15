@@ -14,6 +14,6 @@
 
 ## <img src="img/readme/pink.gif">
 
-## Author
+## Автор
 
 - [**Stanislav Kazankov**](https://github.com/kazankovstas/) - _HTML Academy Student_
