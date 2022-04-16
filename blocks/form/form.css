@@ -312,7 +312,7 @@
 }
 
 .form__input:focus {
-  outline: 2px solid var(--accent-pink);
+  border: 2px solid var(--accent-pink);
   border-radius: 5px;
 }
 
@@ -394,6 +394,10 @@
 }
 
 .form__input_type_achievements:active + .form__label_type_achievements::before {
+  border: 2px solid var(--accent-pink);
+}
+
+.form__input_type_achievements:focus + .form__label_type_achievements::before {
   border: 2px solid var(--accent-pink);
 }
 
@@ -484,6 +488,10 @@ form__item_type_contacts-item {
   resize: none;
   overflow: auto;
   padding: 22px 0 0 20px;
+}
+
+.form__textarea:focus {
+  border: 2px solid var(--accent-pink);
 }
 
 @media screen and (max-width: 998px) {
