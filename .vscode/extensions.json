@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "vscode-icons-team.vscode-icons",
+    "xr0master.webstorm-intellij-darcula-theme",
+    "shd101wyy.markdown-preview-enhanced",
+    "ritwickdey.liveserver",
+    "kisstkondoros.vscode-gutter-preview",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "icrawl.discord-vscode",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag"
+  ]
+}
