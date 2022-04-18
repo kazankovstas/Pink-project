@@ -336,8 +336,8 @@
 }
 
 .form__input_type_contacts {
-  position: relative;
   width: 371px;
+  position: relative;
 }
 
 @media screen and (max-width: 998px) {
@@ -353,10 +353,6 @@
     margin-bottom: 0;
     grid-row: 2/2;
   }
-}
-
-.form__input_type_contacts::after {
-  content: url(../../img/phone-icon.svg);
 }
 
 /* FILTER */
